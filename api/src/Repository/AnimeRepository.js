@@ -17,6 +17,7 @@ export async function listarTodosAnimes(){
             nm_anime nome
        FROM tb_anime`;
 
-    const {resposta} = await con.query (comando);  
+    const [resposta] = await con.query (comando);  
     return resposta;  
 }
+
