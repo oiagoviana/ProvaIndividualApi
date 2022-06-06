@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { inserirAnime, listarTodosAnimes } from '../Repository/AnimeRepository.js'
+import { alterarAnime, inserirAnime, listarTodosAnimes } from '../Repository/AnimeRepository.js'
 const server= Router();
 
 server.post('/anime', async (req, resp) => {
@@ -25,6 +25,7 @@ server.get('/anime', async (req, resp) => {
         })
     }
 }) 
+
 
 
 export default server;
