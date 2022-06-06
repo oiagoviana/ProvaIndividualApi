@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { alterarAnime, inserirAnime, listarTodosAnimes } from '../Repository/AnimeRepository.js'
+import { inserirAnime, listarTodosAnimes } from '../Repository/AnimeRepository.js'
 const server= Router();
 
 server.post('/anime', async (req, resp) => {
