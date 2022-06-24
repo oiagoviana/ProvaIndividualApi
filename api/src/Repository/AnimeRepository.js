@@ -19,6 +19,6 @@ export async function listarTodosAnimes(){
 
     const [resposta] = await con.query (comando);  
     return resposta;  
-}
+} 
 
 
